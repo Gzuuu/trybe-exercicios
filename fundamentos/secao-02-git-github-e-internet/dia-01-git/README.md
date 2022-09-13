@@ -42,8 +42,8 @@ Crie uma branch nova a partir da branch atualiza-readme. A nova branch deve se c
 Acesse a branch adiciona-infos e utilize sua criatividade para escrever o passo a passo de como o versionamento funciona no README.md. 
 > Por exemplo: "O primeiro passo é ter uma pasta versionada e criar um estrutura inicial e fazemos isso utilizando o comando **git init**. O segundo passo é criar uma branch nova com o comando **git checkout nome-da-branch** ou **git checkout -b "nome-da-branch"**, etc. Você também pode utilizar esse momento para escrever e responder as dúvidas que voce ainda tem sobre versionamento.
 
-Adicione as alterações em staging, realize o commit;
+Adicione as alterações em staging, realize o **commit**;
 
-Volte para a branch atualiza-readme e realize o merge das alterações feitas na branch adiciona-infos;
+Volte para a `branch atualiza-readme` e realize o **merge** das alterações feitas na `branch adiciona-infos`;
 
-Retorne para a branch main e realize o merge das alterações.
+Retorne para a `branch main` e realize o **merge** das alterações.
