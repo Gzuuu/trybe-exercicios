@@ -19,3 +19,5 @@
 9 - Explore as propriedades `font-style, line-height, text-align e text-decoration`
 
 10 - Troque a `cor de fundo` de cada item da lista para a cor correspondente ao texto
+
+11 - Coloque todo o CSS criado até agora nos exercícios anteriores em um arquivo externo.
