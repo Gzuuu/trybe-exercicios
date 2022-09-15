@@ -1,0 +1,42 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orange;
+}
+
+ul {
+    background-color: aquamarine;
+}
+
+.change-color {
+    background-color: rgb(29, 138, 138);
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 10px;
+    color: blueviolet;
+}
+
+body {
+    font-size: 16px;
+}
+
+li {
+    font-style: italic;
+    line-height: 30px;
+    text-decoration: darkviolet;
+}
+
+#first-li {
+    background-color: yellow;
+}
+
+#second-li {
+    background-color: red;
+}
+
+#third-li {
+    background-color: brown;
+}
