@@ -118,34 +118,34 @@ let pecas = 'REI';
 
 // terceira parte if/else (3.4)
 
-const salarioBruto = 3000;
-let salarioBase;
+// const salarioBruto = 3000;
+// let salarioBase;
 
-if (salarioBruto < 1556 && salarioBruto > 0){
-    salarioBase = salarioBruto - (8/100 * salarioBruto)
-}else if (salarioBruto > 1556 && salarioBruto < 2594){
-    salarioBase = salarioBruto - (9/100 * salarioBruto)
-}else if (salarioBruto > 2594 && salarioBruto < 5189){
-    salarioBase = salarioBruto - (11/100 * salarioBruto)
-}else if (salarioBruto > 5189){
-    salarioBase = salarioBruto - 570
-}else{
-    console.log('salario inválido')
-}
-let valorIR;
+// if (salarioBruto < 1556 && salarioBruto > 0){
+//     salarioBase = salarioBruto - (8/100 * salarioBruto)
+// }else if (salarioBruto > 1556 && salarioBruto < 2594){
+//     salarioBase = salarioBruto - (9/100 * salarioBruto)
+// }else if (salarioBruto > 2594 && salarioBruto < 5189){
+//     salarioBase = salarioBruto - (11/100 * salarioBruto)
+// }else if (salarioBruto > 5189){
+//     salarioBase = salarioBruto - 570
+// }else{
+//     console.log('salario inválido')
+// }
+// let valorIR;
 
-if (salarioBase > 0 && salarioBase < 1903){
-    console.log('isento de imposto de renda')
-}else if (salarioBase > 1903 && salarioBase < 2826){
-    valorIR = 7.5/100 * salarioBase - 142.8
-}else if (salarioBase > 2826 && salarioBase < 3751){
-    valorIR = 15/100 * salarioBase - 354.8
-}else if (salarioBase > 3751 && salarioBase < 4664){
-    valorIR = 22.5/100 * salarioBase - 636
-}else if(salarioBase > 4664){
-    valorIR = 27.5/100 * salarioBase - 869
-}else (console.log('salario inválido'))
+// if (salarioBase > 0 && salarioBase < 1903){
+//     console.log('isento de imposto de renda')
+// }else if (salarioBase > 1903 && salarioBase < 2826){
+//     valorIR = 7.5/100 * salarioBase - 142.8
+// }else if (salarioBase > 2826 && salarioBase < 3751){
+//     valorIR = 15/100 * salarioBase - 354.8
+// }else if (salarioBase > 3751 && salarioBase < 4664){
+//     valorIR = 22.5/100 * salarioBase - 636
+// }else if(salarioBase > 4664){
+//     valorIR = 27.5/100 * salarioBase - 869
+// }else (console.log('salario inválido'))
 
-const salarioLimpo = salarioBase - valorIR
+// const salarioLimpo = salarioBase - valorIR
 
-console.log(salarioLimpo)
+// console.log(salarioLimpo)
