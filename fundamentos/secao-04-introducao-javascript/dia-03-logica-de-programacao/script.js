@@ -34,3 +34,19 @@
 // console.log(maiorPalavra)
 
 // exercicios 1 (1.4)
+
+// let num = 50;
+// let maiorNumero = 0;
+
+// for (index = 2; index < num; index += 1){
+//     let contador = 0;
+//     for (let index2 = 2; index2 < index; index2 += 1){
+//         if (index % index2 == 0){
+//             contador = 1;
+//         }
+//     }
+//     if (index > 1 && contador == 0 && index > maiorNumero) {
+//         maiorNumero = index
+//     }
+// }
+// console.log(maiorNumero)
