@@ -50,3 +50,20 @@
 //     }
 // }
 // console.log(maiorNumero)
+
+// exercicio bonus (2.1)
+
+// let n = 5;
+
+// for (index = 0; index < n; index += 1){
+//     console.log('*****')
+// }
+
+// exercicio bonus (2.2)
+
+// let n = 5;
+// let stars = '';
+// for (let index = 0; index < n; index += 1){
+//      stars += '*'
+//      console.log(stars)
+// }
