@@ -66,4 +66,8 @@
 // for (let index = 0; index < n; index += 1){
 //      stars += '*'
 //      console.log(stars)
-// }
+// 
+
+
+
+
