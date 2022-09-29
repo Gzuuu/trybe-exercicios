@@ -42,18 +42,24 @@
       </section>
     </main>
     <script>
-        /*
-      Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-      - document.getElementById()
-      - document.getElementsByClassName()
-      - document.getElementsByTagName()
-      1. Crie e execute uma função que mude o texto na tag `<p>-----</p>`, para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
-      2. Crie e execute uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-      3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.
-      4. Crie e execute uma função que corrija o texto da tag <h1>.
-      5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.
-      6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
-      */
+    
+    //   Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+    //   - document.getElementById()
+    //   - document.getElementsByClassName()
+    //   - document.getElementsByTagName()
+    //   1. Crie e execute uma função que mude o texto na tag `<p>-----</p>`, para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+        document.querySelectorAll('p')[1].innerText = 'Apos o periodo de 2 anos eu vou estar trabalhando como desenvolvedor web'
+    //   2. Crie e execute uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+        document.querySelector('.main-content').style.backgroundColor = 'rgb(76, 164, 109)'
+    //   3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.
+        document.querySelector('section').style.backgroundColor = 'rgb( 255, 255, 255)'
+    //   4. Crie e execute uma função que corrija o texto da tag <h1>.
+        document.querySelector('h1').innerHTML = 'Exercicio - JavaScript'
+    //   5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.
+        document.querySelector('p').style.textTransform = 'UpperCase'
+    //   6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
+        console.log(document.querySelectorAll('p'))
+    
     </script>
   </body>
 </html>
