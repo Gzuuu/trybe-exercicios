@@ -22,7 +22,7 @@ function createDaysOfTheWeek() {
     lis.setAttribute('class', 'day')
     lis.innerHTML = decemberDaysList[index]
     document.querySelector('#days').appendChild(lis)
-    if (decemberDaysList[index] === 24 || decemberDaysList[index] === 25 || decemberDaysList[index] === 26){
+    if (decemberDaysList[index] === 24 || decemberDaysList[index] === 25 || decemberDaysList[index] === 31){
         lis.className += ' holiday'
     }
     if (decemberDaysList[index] === 4 || decemberDaysList[index] === 11 || decemberDaysList[index] === 18 || decemberDaysList[index] === 25){
@@ -34,5 +34,48 @@ function createDaysOfTheWeek() {
   function buttonCreate (string){
     let button = document.createElement('button')
     button.setAttribute('id', 'btn-holiday')
+    button.innerHTML = string
     document.querySelector('.buttons-container').appendChild(button)
   }
+  buttonCreate('Feriados')
+  // parte 3 //
+
+  function changeColor (){
+    let selecao = document.querySelectorAll('.holiday')
+    for (let index = 0; index < selecao.length; index += 1){
+        if (selecao[index].style.backgroundColor != 'brown'){
+            selecao[index].style.backgroundColor = 'brown'
+        } else selecao[index].style.backgroundColor = 'rgb(238,238,238)'
+    }
+  }
+
+  document.querySelector('#btn-holiday').addEventListener('click', changeColor)
+
+  // parte 4 // 
+
+  buttonCreate('Sexta-feira')
+  document.querySelectorAll('#btn-holiday')[1].setAttribute('id', 'btn-friday')
+
+  // parte 5 //
+  
+  function changeColors (){
+    let fridays = [4,11,18,25]
+    let selecao = document.querySelectorAll('.friday')
+    let sextou = 'Sextou!'
+    for (let index = 0; index < selecao.length; index += 1){
+        if (selecao[index].innerHTML !== sextou){ 
+            selecao[index].innerHTML = sextou
+        }else selecao[index].innerHTML = fridays[index]
+          
+  }
+  }
+  document.querySelector('#btn-friday').addEventListener('click', changeColors)
+
+  // parte 6 // 
+  let dias = document.querySelector('#days')
+   dias.addEventListener('mouseover', function(evento){
+    evento.target.style = 'font-size: 50px' 
+  })
+  dias.addEventListener('mouseout', function(evento){
+    evento.target.style = 'font-size: 20px' 
+  })
