@@ -99,3 +99,12 @@ function criaLegenda (cor){
 }
 
 criaLegenda('rgb(131, 80, 232)')
+
+// parte 9 // 
+
+let myTask = document.querySelector('.my-tasks')
+myTask.addEventListener('click',function(event){
+    if(event.target.className == 'task'){
+        event.target.className = 'task selected'
+    }else event.target.className = 'task'
+})
