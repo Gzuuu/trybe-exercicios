@@ -72,12 +72,13 @@ function createDaysOfTheWeek() {
   document.querySelector('#btn-friday').addEventListener('click', changeColors)
 
   // parte 6 // 
+ 
   let dias = document.querySelector('#days')
    dias.addEventListener('mouseover', function(evento){
-    evento.target.style = 'font-size: 50px' 
+    evento.target.style.fontSize = '50px'
   })
   dias.addEventListener('mouseout', function(evento){
-    evento.target.style = 'font-size: 20px' 
+    evento.target.style.fontSize = '20px'
   })
 
 // parte 7 // 
@@ -108,3 +109,23 @@ myTask.addEventListener('click',function(event){
         event.target.className = 'task selected'
     }else event.target.className = 'task'
 })
+
+// parte 10 // 
+
+function trocaCor (){
+  let taskSelecionada = document.getElementsByClassName('task selected')
+  let days = document.querySelector('#days')
+  let taskin = document.querySelector('.task')
+  let taskinColor = taskin.style.backgroundColor;
+  days.addEventListener('click',function(event){
+    let corDoElementoClicado = event.target.style.color;
+    if (taskSelecionada.length > 0 && corDoElementoClicado !== taskinColor){
+      let color = taskSelecionada[0].style.backgroundColor;
+      event.target.style.color = color
+    }else if (corDoElementoClicado === taskinColor){
+      event.target.style.color = 'rgb(119, 119, 119)'
+    }
+  })
+}
+
+trocaCor()
