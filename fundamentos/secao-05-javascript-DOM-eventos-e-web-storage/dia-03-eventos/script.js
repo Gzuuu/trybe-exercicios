@@ -79,3 +79,23 @@ function createDaysOfTheWeek() {
   dias.addEventListener('mouseout', function(evento){
     evento.target.style = 'font-size: 20px' 
   })
+
+// parte 7 // 
+
+let span = document.createElement('span')
+function criaElemento (string){
+    document.querySelector('.my-tasks').appendChild(span).innerHTML = string
+}
+
+criaElemento('Cozinhar')
+
+// parte 8 //
+
+function criaLegenda (cor){
+    let elem = document.createElement('div')
+    elem.setAttribute('class', 'task')
+    elem.style.backgroundColor = cor
+    document.querySelector('.my-tasks').appendChild(elem)
+}
+
+criaLegenda('rgb(131, 80, 232)')
