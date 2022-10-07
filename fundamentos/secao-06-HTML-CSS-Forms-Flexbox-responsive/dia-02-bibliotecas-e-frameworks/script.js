@@ -10,6 +10,6 @@ function prevent (){
 }
 
 botao.addEventListener('click', function(event){
-    event.preventDefault()
     prevent()
+    event.preventDefault()
 })

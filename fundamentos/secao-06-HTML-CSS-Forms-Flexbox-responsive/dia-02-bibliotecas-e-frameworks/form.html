@@ -5,20 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Formulário TrybeTrip</h1>
-    <form action="" method="get">
-        <section>
-            <label for="name-content">Nome Completo: </label>
-            <input type="text" name="name" id="name-content" required autocomplete="off">
-        </section> <br> <br>
-        <section>
-            <label for="email-content">Email:</label>
-            <input type="email" name="e-mail" id="email-content" required autocomplete="off">
-        </section>
+<main class="main4Change">
+    <h1 class="display-4">Formulário TrybeTrip</h1>
+    <form action="" method="get" class="f4Test container">
+        <div class="row divName">
+            <div class="col-md-4 mb-3">
+                <label for="name-content">Nome Completo: </label>
+                <input class="form-control" type="text" name="name" id="name-content" required autocomplete="off" placeholder="Seu nome completo.">
+                <small class="text-muted">
+                    Deve ter entre 10 e 50 caracteres.
+                </small>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="email-content">Email:</label>
+                <input class="form-control" type="email" name="e-mail" id="email-content" required autocomplete="off" placeholder="Ex: you@Email.com">
+                <small class="text-muted">
+                    Deve ter entre 10 e 50 caracteres.
+                </small>
+            </div>
+        </div>
         <br>
-        <section> Destino preferido : <br><br>
+        <div class="form-check"> Destino preferido : <br><br>
             <input type="radio" name="options" id="opt-content">
             <label for="opt-content">Cidade</label>
 
@@ -30,32 +41,34 @@
                 
             <input type="radio" name="options" id="opt-content3">
             <label for="opt-content3">Montanhas</label>
-        </section>
+        </div>
         <br>
-        <section>
+        <div class="form-group">
             <label for="whyYou">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
-        </section>
-        <section>
-            <textarea name="whyYou" id="textArea-content" cols="30" rows="10" maxlength="500"></textarea>
-        </section>
+        </div>
+        <div class="form-floating divText">
+            <textarea class="" name="whyYou" id="textArea-content" cols="30" rows="10" maxlength="500"></textarea>
+        </div>
         <br>
-        <section>
+        <div class="form-group">
             <label for="setDate">Qual a melhor data para realizar sua viagem? </label>
             <input type="date" name="actualDate" id="setDate" required>
-        </section>
-        <section> <br> <br>
-            <input type="checkbox" name="checkBoxID" id="checked">
+        </div>
+        <div class="form-check"> <br> <br>
+            <input class="form-check-input"  type="checkbox" name="checkBoxID" id="checked">
             <label for="checked">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
-        </section> <br> <br>
-        <section>
-            <input type="checkbox" name="permission" id="checkTrue" required>
+        </div> <br> <br>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="permission" id="checkTrue" required>
             <label for="checkTrue">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
-        </section>
-        <section>
-            <button type="reset">Limpar</button>
-            <button type="submit" id="btn-submit">Enviar</button>
-        </section>
+        </div> <br> <br>
+        <div class="btn4Change">
+            <button class="btn btn-danger" type="reset">Limpar</button>
+            <button class="btn btn-success" type="submit" id="btn-submit">Enviar</button>
+        </div>
     </form>
+</main>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
