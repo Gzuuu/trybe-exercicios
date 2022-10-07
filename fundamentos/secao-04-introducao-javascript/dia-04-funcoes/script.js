@@ -73,7 +73,7 @@
 //     console.log(info[key] + ' e ' + info2[key])
 // }
 
-// exercicios 1 (1.6)
+// // exercicios 1 (1.6)
 
 // let leitor = {
 //     nome: 'Julia',
@@ -90,7 +90,7 @@
 
 //   console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' Se chama : ' + leitor.livrosFavoritos[0].titulo + '.')
 
-// exercicios 1 (1.7)
+// // exercicios 1 (1.7)
 
 // let leitor = {
 //     nome: 'Julia',
@@ -118,7 +118,7 @@
 
 //   console.log(leitor.nome + ' Tem ' + quantidade + ' Livros favoritos!')
 
-// exercicios 2 funcoes (2.1)
+// // exercicios 2 funcoes (2.1)
 
 // function palindromeVerify (string){
     
@@ -132,7 +132,7 @@
 // }
 // palindromeVerify('desenvolvimento')
 
-// exercicios 2 (2.2)
+// // exercicios 2 (2.2)
 
 // let arrayTeste = [2, 3, 6, 7, 10, 1];
 
@@ -150,7 +150,7 @@
 
 // console.log(highest(arrayTeste))
 
-// exercicios 2 (2.3)
+// // exercicios 2 (2.3)
 
 // let arrayTeste = [2, 4, 6, 7, 10, 0, -3];
 
@@ -168,6 +168,5 @@
 
 // console.log(highest(arrayTeste))
 
-// exercicios 2 (2.3)
+// // exercicios 2 (2.3)
 
-//
