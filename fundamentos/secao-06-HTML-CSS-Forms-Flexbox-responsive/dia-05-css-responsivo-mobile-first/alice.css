@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(142, 89, 192);
+  }
+
+  header h1 {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+  header nav {
+    display: flex;
+    border: 1px solid black;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid blue;
+  }
+
+  header li {
+    list-style: none;
+    border: 1px solid red;
+  }
