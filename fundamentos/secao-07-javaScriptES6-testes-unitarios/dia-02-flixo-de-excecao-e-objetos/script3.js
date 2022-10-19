@@ -69,3 +69,36 @@ const verifyPair = (lesson, keys, value) => {
 }
 
 verifyPair(lesson2, 'turno', 'noite');
+
+const matView = (objct) => {
+  const obj = Object.entries(objct)
+  let sum = 0;
+  for (let index in obj){
+    if (obj[index][1].materia == 'Matemática'){
+      sum += obj[index][1].numeroEstudantes
+    }
+  }
+  return sum
+}
+
+matView(allLessons);
+
+const createReport = (objct, prof) => {
+  const obj = Object.entries(objct)
+  const newObj = {
+    professor : prof,
+    aulas: [],
+  }
+
+  let sum = 0;
+  for (let index in obj){
+    if (obj[index][1].professor == prof)
+    newObj.aulas.push(obj[index][1].materia)
+    sum += obj[index][1].numeroEstudantes
+  }
+
+  newObj.estudantes = sum
+  return newObj
+}
+
+console.log(createReport(allLessons, 'Maria Clara'));
